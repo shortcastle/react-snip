@@ -3,9 +3,9 @@ import React, { useRef, useState } from "react";
 
 const ReactSnip: React.FC<{
   visible: boolean;
-  onSnap: (canvas: HTMLCanvasElement) => void;
+  onSnip: (canvas: HTMLCanvasElement) => void;
   onClose: () => void;
-}> = ({ visible, onSnap, onClose }) => {
+}> = ({ visible, onSnip, onClose }) => {
   const maskRef = useRef<HTMLDivElement>(null);
   const [startPoint, setStartPoint] = useState<[number, number]>([0, 0]);
   const [endPoint, setEndPoint] = useState<[number, number]>([0, 0]);
@@ -68,7 +68,7 @@ const ReactSnip: React.FC<{
               height,
               useCORS: true,
             }).then((can) => {
-              onSnap(can);
+              onSnip(can);
               setMaskDisplay(true);
             });
           }
