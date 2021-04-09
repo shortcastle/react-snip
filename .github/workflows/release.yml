@@ -19,7 +19,7 @@ jobs:
 
       - name: Set up Conventional Commit preset
         working-directory: .
-        run: npm install conventional-changelog-conventionalcommits
+        run: yarn add conventional-changelog-conventionalcommits
 
       - name: Assign Version and Release
         working-directory: .
