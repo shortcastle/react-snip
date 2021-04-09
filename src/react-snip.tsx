@@ -1,5 +1,5 @@
 import html2canvas from "html2canvas";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 const ReactSnip: React.FC<{
   visible: boolean;
