@@ -42,6 +42,9 @@ const ReactSnip: React.FC<{
           zIndex: 999,
           height: "100%",
           backgroundColor: "rgba(0,0,0,.45)",
+          cursor: "crosshair",
+          textAlign: "center",
+          fontSize: "1.5rem",
         }}
         onContextMenu={(e) => {
           e.preventDefault();
@@ -74,8 +77,8 @@ const ReactSnip: React.FC<{
           }
         }}
       >
-        <h1>Drag mouse to select area</h1>
-        <h2>Right click to cancel</h2>
+        <p>Drag mouse to select area</p>
+        <p>Right click to cancel</p>
         {mouseDown && (
           <div
             style={{
