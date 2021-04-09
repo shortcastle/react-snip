@@ -15,7 +15,7 @@ function App() {
       </button>
       <ReactSnip
         visible={visible}
-        onSnap={(canvas) => {
+        onSnip={(canvas) => {
           console.log(canvas);
         }}
         onClose={() => {
